@@ -1,0 +1,304 @@
+*{
+    padding : 0;
+    margin : 0;
+    box sizing : border-box;
+    font font-family : century;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(image1.jpg) ;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;<<
+	image-a
+
+}
+
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+
+}
+
+.logo span{
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: auto;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+    position: relative;
+    top:auto;
+    
+
+}
+
+ul li a:hover{
+    background: #fff;
+    color: black;
+}
+
+ul li.active a{
+    background:#fff ;
+    color: black;
+}
+
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left :50%;
+    transform: translate(-50%, -50%);
+}
+.titre h1{
+    color: #fff;
+}
+.bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+.bouton{
+    transition: 00.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.ul2{
+    list-style: none;
+    float:;
+    display: flex;
+    margin-top: 50px;
+}
+.titre2{
+     position: absolute;
+    top: 61%;
+    left :50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 50px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    margin: 30px;
+    font-weight: 500;
+    transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+    background: #fff;
+    color: black;
+}
+
+ul li.active a{
+    background:#fff ;
+    color: black;
+}
+
+section{
+   list-style: none;
+   float: right;
+   display: flex;
+   position : absolute;
+   top : 70%;
+   left : 20%;
+   
+}
+audio{
+position : absolute;
+top : 5%;
+margin : 0.5%;
+}
+h1{
+    text-align: center;
+    }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  padding: 35px;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  top:10%;
+}
+
+.button:hover {
+  background: white;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: -300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);  
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  top:0px;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 28%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.popup .close:hover {
+  color: orange;
+  transform: rotate(90deg);
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow:visible;
+  position: absolute;
+  text-align: left;
+}
+.textepage{
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+iframe{
+    width: 800px;
+    height: 250px;
+    border-radius: 10px;
+}
